@@ -5,11 +5,18 @@
   "scripts": {
     "start": "react-scripts start",
     "lint": "eslint */**.{tsx,ts}",
-    "lint:fix": "eslint */**.{tsx,ts} --fix"
+    "lint:fix": "eslint */**.{tsx,ts} --fix",
+    "server": "json-server --watch db.json --port 3004"
   },
   "dependencies": {
+    "axios": "^1.1.3",
+    "json-server": "^0.17.0",
+    "node-sass": "^7.0.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-hook-form": "^7.39.1",
+    "react-query": "^3.39.2",
+    "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1"
   },
   "eslintConfig": {
@@ -32,7 +39,7 @@
   },
   "devDependencies": {
     "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
+    "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.0.0",
